@@ -12,6 +12,7 @@ var accessLogStream = fs.createWriteStream(__dirname + "/myLogFile.log", {
 app.use(morgan("combined", { stream: accessLogStream }));
 
 app.get("/", function (req, res) {
+  console.log(req.get("user-agent"))
   if (
     isbot(req.get("user-agent")) ||
     _.includes(req.get("user-agent"), "Chrome-Lighthouse")
