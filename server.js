@@ -22,7 +22,7 @@ app.get("/", function (req, res) {
     res.sendFile(path.resolve('fake/index.html'));
   }
 });
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 5555);
 app.set("host", process.env.HOST || "localhost");
 
 app.listen(app.get("port"), function () {
