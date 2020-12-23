@@ -1,0 +1,17 @@
+{
+  "name": "viettel-bac-lieu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "isbot": "^3.0.14",
+    "lodash": "^4.17.20",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  }
+}
