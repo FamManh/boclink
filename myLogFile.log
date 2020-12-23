@@ -13,3 +13,8 @@
 ::1 - - [23/Dec/2020:02:42:02 +0000] "GET / HTTP/1.1" 200 176070 "-" "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Mobile Safari/537.36"
 ::1 - - [23/Dec/2020:02:42:02 +0000] "GET /microservice/fc HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Mobile Safari/537.36"
 ::1 - - [23/Dec/2020:02:42:05 +0000] "GET /sw-production.js HTTP/1.1" 404 155 "http://localhost:8000/" "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Mobile Safari/537.36"
+::1 - - [23/Dec/2020:10:06:56 +0000] "GET / HTTP/1.1" 200 176070 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+::1 - - [23/Dec/2020:10:06:56 +0000] "GET / HTTP/1.1" 304 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+::1 - - [23/Dec/2020:10:06:56 +0000] "GET /microservice/fc HTTP/1.1" 404 154 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+::1 - - [23/Dec/2020:10:06:58 +0000] "GET /sw-production.js HTTP/1.1" 404 155 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+::1 - - [23/Dec/2020:10:06:58 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
