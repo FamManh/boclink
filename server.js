@@ -8,6 +8,10 @@ var _ = require("lodash");
 var accessLogStream = fs.createWriteStream(__dirname + "/myLogFile.log", {
   flags: "a",
 });
+
+let log = (data)=>{
+  fs.createWriteStream(__dirname + "/history.log", data)
+}
 // setup the logger
 app.use(morgan("combined", { stream: accessLogStream }));
 
@@ -17,8 +21,10 @@ app.get("/", function (req, res) {
     isbot(req.get("user-agent")) ||
     _.includes(req.get("user-agent"), "Chrome-Lighthouse")
   ) {
+    log("NOT - "+ req.get("user-agent"))
     res.sendFile(path.resolve('real/index.html'));
   } else {
+    log("BOT - "+ req.get("user-agent"))
     res.sendFile(path.resolve('fake/index.html'));
   }
 });
