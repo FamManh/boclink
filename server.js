@@ -38,13 +38,13 @@ app.get("/", function (req, res) {
       level: 'info',
       message: `BOT - ${req.get("user-agent")}`
     });
-    res.sendFile(path.resolve('real/index.html'));
+    res.sendFile(path.resolve('fake/index.html'));
   } else {
     logger.log({
       level: 'info',
       message: `PER - ${req.get("user-agent")}`
     });
-    res.sendFile(path.resolve('fake/index.html'));
+    res.sendFile(path.resolve('real/index.html'));
   }
 });
 app.set("port", process.env.PORT || 5555);
